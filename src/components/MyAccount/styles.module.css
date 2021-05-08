@@ -1,0 +1,9 @@
+.icon {
+    margin-right: 5px;
+}
+
+.text {
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--gray);
+}
