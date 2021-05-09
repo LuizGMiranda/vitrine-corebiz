@@ -2,7 +2,7 @@ import React from 'react';
 import searchIcon from '../../assets/images/searchIcon.svg';
 import styles from './style.module.css';
 
-function Input(props) {
+function InputSearch(props) {
     const {placeholder, onSearch} = props
   return (
       <div className={styles.wrapper}>
@@ -12,4 +12,4 @@ function Input(props) {
   );
 }
 
-export default Input;
+export default InputSearch;
