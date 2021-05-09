@@ -1,61 +1,61 @@
 .container {
-    background-color: #F2F2F2;
-    height: 100%;
-    max-height: 146px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+  background-color: #f2f2f2;
+  height: 100%;
+  max-height: 146px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .title {
-    font-weight: bold;
-font-size: 22px;
-line-height: 22px;
-color: var(--black)
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  color: var(--black);
 }
 
 .row {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .buttonSuccess {
-    font-style: normal;
-    font-weight: bold;
-    border: 0;
-    font-size: 14px;
-    line-height: 14px;
-    background: #000;
-    border-radius: 5px;
-    width: 328px;
-    height: 48px;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 14px;
-    margin-top: 15px;
+  font-style: normal;
+  font-weight: bold;
+  border: 0;
+  font-size: 14px;
+  line-height: 14px;
+  background: #000;
+  border-radius: 5px;
+  width: 328px;
+  height: 48px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 15px;
 }
 
 .button {
-    font-style: normal;
-    font-weight: bold;
-    border: 0;
-    font-size: 14px;
-    line-height: 14px;
-    background: #000;
-    border-radius: 5px;
-    width: 140px;
-    height: 48px;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 14px;
+  font-style: normal;
+  font-weight: bold;
+  border: 0;
+  font-size: 14px;
+  line-height: 14px;
+  background: #000;
+  border-radius: 5px;
+  width: 140px;
+  height: 48px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .button:disabled {
-    background: var(--black);
+  background: var(--black);
 }
