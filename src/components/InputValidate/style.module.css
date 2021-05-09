@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 8px;
+}
+
+.input {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 17px;
+}
+
+.inputError {
+    background: #FFFFFF;
+    border: 1px solid var(--dark-red);
+    border-radius: 5px;
+    padding: 17px;
+
+}
+
+.input:focus,
+.inputError:focus {
+    outline: none;
+    border: 1px solid var(--ligth-gray);
+}
+
+.textError {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--dark-red);
+}
