@@ -10,6 +10,12 @@ body {
   src: local('Nunito'), url(./assets/fonts/Nunito/Nunito-Regular.ttf) format('truetype');
 }
 
+
+/* DOTs SLIDES */
+#infinite-carousel > ul > button > i.InfiniteCarouselDotActiveIcon {
+  background-color: var(--red);
+}
+
 :root {
   --black: #333333;
   --gray: #7A7A7A;
