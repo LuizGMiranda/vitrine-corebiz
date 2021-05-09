@@ -11,6 +11,9 @@ body {
 }
 
 :root {
+  --black: #333333;
   --gray: #7A7A7A;
-  --red: #F8475F; 
+  --ligth-gray: #BDBDBD;
+  --red: #F8475F;
+  --dark-red: #D7182A; 
 }
