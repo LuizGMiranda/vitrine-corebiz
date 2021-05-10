@@ -88,3 +88,43 @@
     text-align: center;
     color: #000;
 }
+
+@media (max-width: 769px) {
+    .boxProduct {
+        width: auto;
+    height: auto;
+        margin: 10px;
+    }
+.boxProduct img {
+    width: 132px;
+    height: 122px;
+}
+
+.detailsProduct {
+    font-weight: 600;
+    font-size: 10px;
+line-height: 14px;
+    text-align: center;
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsProduct span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--gray);
+}
+
+.boxProduct button {
+    display: block;
+}
+
+.boxProduct:hover {
+    background-color: #fff;
+}
+}

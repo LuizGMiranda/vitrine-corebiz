@@ -4,7 +4,12 @@
     align-items: center;
     width: 100%;
     max-width: 718px;
-    height: 25px;
+}
+
+@media (max-width: 769px) {
+    .wrapper {
+        max-width: 100%;
+    }
 }
 
 .input {

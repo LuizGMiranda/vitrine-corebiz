@@ -4,3 +4,37 @@
     align-items: center;
     margin-top: 20px;
 }
+
+.iconMenu,
+.inputSearchResponsive {
+    display: none;
+}
+
+
+@media (max-width: 769px) {
+    .wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .wrapper img:nth-child(2) {
+        height: 25px;
+    } 
+
+    .wrapper div {
+        display: none;
+    } 
+    
+    .iconMenu {
+        display: block;
+    } 
+    .inputSearchResponsive,
+    .wrapper div:last-child {
+        display: flex;
+    }
+
+    .inputSearchResponsive {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+}

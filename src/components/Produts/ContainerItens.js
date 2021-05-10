@@ -20,15 +20,15 @@ function ContainerItens({ items }) {
 
   return (
     <InfiniteCarousel
-    breakpoints={[
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ]}
+      breakpoints={[
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        }
+      ]}
       dots={true}
       arrows={true}
       showSides={false}

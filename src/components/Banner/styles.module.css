@@ -11,8 +11,25 @@
     padding-left: 350px;
     font-size: 30px;
     line-height: 41px;
+    z-index: 1;
 }
 
 .slideText span {
     font-size: 50px;
+}
+
+@media (max-width: 769px) {
+    .slide {
+        height: 190px;
+    }
+
+    .slideText {
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 2px;
+    }
+
+    .slideText span {
+        font-size: 30px;
+    }
 }

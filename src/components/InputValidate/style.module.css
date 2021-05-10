@@ -34,3 +34,9 @@
     line-height: 12px;
     color: var(--dark-red);
 }
+
+@media (max-width: 769px) {
+    .wrapper {
+        margin-bottom: 22px;
+    }
+}

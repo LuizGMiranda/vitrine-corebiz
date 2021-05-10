@@ -59,3 +59,14 @@
 .button:disabled {
   background: var(--black);
 }
+
+@media (max-width: 769px) {
+  .container {
+    max-height: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
