@@ -22,6 +22,7 @@ function Newsletter() {
             const data = await singUpNewsletter(values)
             if (data) {
                 setSuccess(true)
+                formik.resetForm()
             }
             console.log(values)
         },
@@ -37,7 +38,7 @@ function Newsletter() {
           <Container>
               {
                   success ? (
-                        <div >
+                        <div className={styles.center}>
                             <p>
                                 <strong>Seu e-mail foi cadastrado com sucesso!</strong> <br/>
                                 A partir de agora você receberá as novidade e ofertas exclusivas.
