@@ -1,6 +1,15 @@
+import { useDispatch } from "react-redux";
+import { increment } from "../../redux/cartSlice";
 import styles from './styles.module.css'
 
 function Item({ name, imageUrl, listPrice, price, installments, stars }) {
+  const dispatch = useDispatch();
+  
+  function handleClick() {
+    console.log('oie')
+    dispatch(increment())
+  }
+
   return (
     <div className={styles.boxProduct}>
       <img src={imageUrl} alt={`Produto ${name}}`} />
@@ -14,7 +23,7 @@ function Item({ name, imageUrl, listPrice, price, installments, stars }) {
              <small>ou em {installments[0].quantity}x de R$ {installments[0].value}</small>
          )  
         }
-        <button className={styles.button}>Comprar</button>
+        <button onClick={handleClick} className={styles.button}>Comprar</button>
       </div>
     </div>
   );
