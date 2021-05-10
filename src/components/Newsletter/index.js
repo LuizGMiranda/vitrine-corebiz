@@ -4,6 +4,7 @@ import Container from '../Container';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import InputValidate from '../InputValidate';
+import { singUpNewsletter } from '../../services/newsletter';
 
 const validationSchema = yup.object().shape({
     name: yup.string().required('Preencha com seu nome completo'),
@@ -17,8 +18,11 @@ function Newsletter() {
             name: '',
             email: ''
         },
-        onSubmit: (values) => {
-            setSuccess(true)
+        onSubmit: async (values) => {
+            const data = await singUpNewsletter(values)
+            if (data) {
+                setSuccess(true)
+            }
             console.log(values)
         },
         validationSchema
@@ -48,7 +52,7 @@ function Newsletter() {
                         <div className={styles.row}>
                             <InputValidate id="name" placeholder="Digite seu nome" formik={formik} />
                             <InputValidate id="email" placeholder="Digite seu email" formik={formik} />
-                            <button type="submit" className={styles.button} disabled={!formik.isValid || formik.isSubmitting} onClick={formik.handleSubmit}>Eu quero</button>
+                            <button type="submit" className={styles.button} disabled={formik.isSubmitting} onClick={formik.handleSubmit}>Eu quero</button>
                         </div>
                     </div>
                   )
