@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { increment } from "../../redux/cartSlice";
+import RatingStar from "./RatingStar";
 import styles from './styles.module.css'
 
 function Item({ name, imageUrl, listPrice, price, installments, stars }) {
@@ -10,12 +11,16 @@ function Item({ name, imageUrl, listPrice, price, installments, stars }) {
     dispatch(increment())
   }
 
+  
+
   return (
     <div className={styles.boxProduct}>
       <img src={imageUrl} alt={`Produto ${name}}`} />
       <div className={styles.detailsProduct}>
         <p>{name}</p>
-        star {stars}
+        <div className={styles.rating}>
+        <RatingStar value={stars} />
+        </div>
         {listPrice && <span>de {listPrice}</span>}
         <p className={styles.priceProduct}>por R$ {price}</p>
         {

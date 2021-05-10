@@ -89,6 +89,11 @@
     color: #000;
 }
 
+.rating > div > svg {
+    height: 11px;
+    width: 11px;
+}
+
 @media (max-width: 769px) {
     .boxProduct {
         width: auto;
